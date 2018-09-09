@@ -27,11 +27,9 @@
                 <th>Building Name</th>
                 <th></th>
               </tr>
-              <tr ng-repeat="uf places in places at uf">
-                <td>{ {listings.code}}
-                </td>
-                <td>{ {listings.buildingName}}
-                </td>
+              <tr ng-repeat="listing in listings">
+                <td>{{listing.code}}</td>
+                <td>{{listing.name}}</td>
               </tr>
             </table>
           </div>
@@ -47,31 +45,17 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-md-2 control-label">Building Name</label>
+                <label class="col-md-2 control-label">Buildling Name</label>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" name="buildingName"
-                    ng-model="buildingName" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-md-2 control-label">Latitude</label>
-                <div class="col-md-4">
-                  <input type="number" class="form-control" name="lat"
-                    ng-model="lat" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-md-2 control-label">Longitude</label>
-                <div class="col-md-4">
-                  <input type="number" class="form-control" name="long"
-                    ng-model="long" />
+                  <input type="text" class="form-control" name="name"
+                    ng-model="name" />
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-md-2 control-label">Address</label>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" name="add"
-                    ng-model="add"/>
+                  <input type="text" class="form-control" name="address"
+                    ng-model="address" />
                 </div>
               </div>
               <div class="form-group">								
