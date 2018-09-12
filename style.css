@@ -13,6 +13,17 @@ h1 {
   padding: 10px;
 }
 
+h2{
+  background-color: #0021a5;
+  color: #fa4616;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
 h4{
   background-color: #0021a5;
   color: #fa4616;
@@ -35,8 +46,11 @@ th{
   padding: 8px;
 }
 
-jumbotron{
+.jumbotron{
   float: left;
+  width: 100%;
+  background-color:transparent;
+  border: 2px solid #ccc;
 }
 
 form{
@@ -66,7 +80,7 @@ input[type=submit]
 }
 
 input[type=submit]:hover {
-    background-color: #fa4616; /* Green */
+    background-color: #fa4616;
     color: white;
 }
 
@@ -91,4 +105,11 @@ input[type=text]:focus {
   max-height: 375px;
   overflow: auto;
   border: 2px solid #ccc;
+}
+
+button{
+  border-radius: 5px;
+  border: none;
+  background-color: #0021a5;
+  color: #fa4616;
 }
